@@ -11,16 +11,20 @@ title: Welcome to Middleman
   %br
   %br
 
-  Replace all the "
-  .input-wrapper
+  Replace all the
+  %span.input-wrapper
     %input{ :type => "text", :id => "letters-to-replace", :class => "input-word", :placehoder => "e.g. a, e, i, o, u", :value => "a, e, i, o, u"}
-  " letters with "
-  .input-wrapper
+  letters with
+  %span.input-wrapper
     %input{ :type => "text", :id => "replacement", :class => "input-word", :placehoder => "e.g. oodle", :value => "oodle"}
-  " in the word:
-  .input-wrapper
+  in the word:
+  %span.input-wrapper
     %input{ :type => "text", :id=> "word", :class => "input-word", :placehoder => "e.g. Doggo", :value => "Doggo"}
 
 The result is:
 #result
   placeholder text
+
+Made by
+%a{ :href => "http://cwervo.com/" }
+  Andres Cuervo
