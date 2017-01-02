@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+// Global variable (icky, but this is SCSS :p)
+$base-text-height: 1vw;
+body {
+    font-family: Impact, Arial;
+    $body-padding-top: ($base-text-height * 2);
+    padding: $body-padding-top ($body-padding-top * 5);
+    position: relative;
+    height: 100vh + 30vh;
+    width: 100vw + 30 vw;
+}
+
+#main-form {
+    line-height: 2.2em;
+}
+
+// Make this only as big as the input, acting like a natural word
+.input-word {
+    border: none;
+    background: #8EAFDC;
+    text-align: center;
+    border-radius: 40px;
+    display: inline;
+    // width: 100%;
+    // float: left;
+}
+
+.input-wrapper::before, .input-wrapper::after {
+    display: inline;
+    content: '"';
+    // float: left;
+}
+
+
+#result {
+    font-size: 3em;
+    // margin-top: ($base-text-height * 5);
+    // font-size: $base-text-height * 3.5;
+    text-align: center;
+}
+
+body {
+    font-size: 3.5em;
+    // overflow: hidden;
+    background-image: url('/images/bg.png');
+    background-color: #eef;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 2em;
+    }
+}

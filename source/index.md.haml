@@ -1,0 +1,26 @@
+---
+title: Welcome to Middleman
+---
+
+// Figure out how you have to structure things so that this site is completely tab
+// arrow keys accessible! :)
+%form{ :name => "oodle", :id => "main-form" }
+  Oodle-ize it! Enter some (comma-separated) letters to be replaced, a word to
+  replace those letters with, and a word to replace in. Try it out below!
+
+  %br
+  %br
+
+  Replace all the "
+  .input-wrapper
+    %input{ :type => "text", :id => "letters-to-replace", :class => "input-word", :placehoder => "e.g. a, e, i, o, u", :value => "a, e, i, o, u"}
+  " letters with "
+  .input-wrapper
+    %input{ :type => "text", :id => "replacement", :class => "input-word", :placehoder => "e.g. oodle", :value => "oodle"}
+  " in the word:
+  .input-wrapper
+    %input{ :type => "text", :id=> "word", :class => "input-word", :placehoder => "e.g. Doggo", :value => "Doggo"}
+
+The result is:
+#result
+  placeholder text
